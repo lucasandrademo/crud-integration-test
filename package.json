@@ -63,7 +63,10 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
+    "rootDir": ".",
+    "roots": [
+      "<rootDir>/src"
+    ],
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
@@ -73,7 +76,9 @@
       "!**/*.module.ts",
       "!main.ts",
       "!**/*.entity.ts",
-      "!**/*.enum.ts"
+      "!**/database/*.ts",
+      "!**/*.enum.ts",
+      "!**/main.ts"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
